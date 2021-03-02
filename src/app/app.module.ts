@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { ContainerCoursesComponent } from './container-courses/container-courses.component';
+import { CardCourseComponent } from './card-course/card-course.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContainerCoursesComponent,
+    CardCourseComponent
   ],
   imports: [
     BrowserModule
