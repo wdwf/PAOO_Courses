@@ -7,7 +7,7 @@ import { Component} from '@angular/core';
 })
 export class ContainerCoursesComponent {
 
-  title = "COURSES WEEK"
+  title = "Courses project"
 
   courses = [
     {

@@ -1,4 +1,20 @@
 .card {
-  color: #E1E1E6;
-  background-color: #202024;
+  background-color: #3c3f4b;
+  border-radius: 20px;
+}
+
+.card-title {
+  color: #fff;
+  font-weight: 100;
+}
+
+.card-text {
+  color: #9a9b9e;
+  font-size: .90rem;
+}
+
+.card-date {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
 }

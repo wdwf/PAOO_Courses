@@ -1,13 +1,26 @@
 <div class="screen__all">
 
-  <h2 class="title">{{ title }}</h2>
+  <div class="screen__sub-box-left">
 
-  <div>
-    <app-input-course (onClickInputCourse)="addCourse($event)"></app-input-course>
+    <h2 class="sub-box__title">{{ title }}</h2>
+
+    <ul class="sub-box__menu-select">
+      <li class="select disabled">Overview</li>
+      <li class="disabled">Task</li>
+      <li class="disabled">Notes</li>
+      <li class="disabled">Files</li>
+    </ul>
+
+    <div class="container__cards">
+      <app-card-course [course]="c" *ngFor="let c of courses"></app-card-course>
+    </div>
+
   </div>
 
-  <div class="container__cards">
-    <app-card-course [course]="c" *ngFor="let c of courses"></app-card-course>
+  <div class="screen__sub-box-right">
+    <div class="container__input-course">
+      <app-input-course (onClickInputCourse)="addCourse($event)"></app-input-course>
+    </div>
   </div>
 
 </div>
