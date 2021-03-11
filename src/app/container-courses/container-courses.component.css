@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.screen__all {
+/* .screen__all {
   width: 100%;
   min-height: 100vh;
   max-height: fit-content;
@@ -81,4 +81,4 @@
   flex-wrap: wrap;
   margin-top: 25%;
   padding-bottom: 50px;
-}
+} */

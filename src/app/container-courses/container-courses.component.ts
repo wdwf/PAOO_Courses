@@ -1,17 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-container-courses',
   templateUrl: './container-courses.component.html',
   styleUrls: ['./container-courses.component.css']
 })
-export class ContainerCoursesComponent implements OnInit {
+export class ContainerCoursesComponent {
 
   title = "COURSES WEEK"
 
-  constructor() { }
+  courses = [
+    {
+      nameCourse: "Javascript",
+      workload: "12h00"
+    },
+    {
+      nameCourse: "Redes",
+      workload: "16h00"
+    },
+  ]
 
-  ngOnInit(): void {
+  addCourse(course) {
+    this.courses.push(course);
   }
 
 }

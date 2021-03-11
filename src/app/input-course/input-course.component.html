@@ -1,0 +1,17 @@
+<div>
+  <div class="col-md-6 form-group">
+    <label for="curseInput">Indentificação do Curso</label>
+    <input type="text" class="form-control" id="courseInput" #courseInput>
+  </div>
+  <div class="col-md-6 form-group mb-2">
+    <label for="workload">Carga Horaria</label>
+    <input type="text" class="form-control" id="workload" #workloadInput>
+  </div>
+  <button
+    (click)="AddCourse(courseInput.value, workloadInput.value)"
+    class="btn btn-primary"
+  >
+  Cadastrar
+  </button>
+</div>
+
