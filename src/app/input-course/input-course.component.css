@@ -30,4 +30,9 @@
   border-radius: 50px;
   margin-top: 20px;
   margin-left: 5%;
+  font-weight: bold;
+}
+
+.btn-addCourse:hover {
+  background-color: #4e10c2;
 }
